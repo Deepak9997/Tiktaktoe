@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIC TAK TOE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&family=Rubik:ital,wght@0,300..900;1,300..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- choice     -->
+    <div class="choice" id="choice">
+        <h2>--- CHOOSE MODE --</h2>
+        <div class="btn">
+            <h5  onclick="easy()">Easy</h5>
+            <h5  onclick="hard()">Hard</h5>
+        </div>
+        <p>***In--<B><big><u>HARD MODE</u></big>--</B> match only three***</p>
+    </div>
+
+<!-- Easy Mode -->
+<div class="main" id="main">
+    <div class="head">
+        <h2>X<p id="x1"></p></h2>
+        <h2>O<p id="o1"></p></h2>
+        <h2 id="refresh" onclick="resetGame()">↺</h2>
+    </div>
+    <div class="container">
+            <div class="game-cell" id="cell-1"></div>
+            <div class="game-cell" id="cell-2"></div>
+            <div class="game-cell" id="cell-3"></div>
+            <div class="game-cell" id="cell-4"></div>
+            <div class="game-cell" id="cell-5"></div>
+            <div class="game-cell" id="cell-6"></div>
+            <div class="game-cell" id="cell-7"></div>
+            <div class="game-cell" id="cell-8"></div>
+            <div class="game-cell" id="cell-9"></div>             
+    </div>
+    <h1 class="take">Player - <p id="x/o" class="xo"></p> - wins !</h1>
+    <div class="option">
+        <h5 class="op" id="quit1">❌ QUIT</h5>
+        <h5 class="op" id="home1">🏠︎ Home</h5>
+    </div>
+</div>
+
+<!-- Hard Mode -->
+<div class="main" id="main1">
+    <div class="head" id="head">
+        <h2>X<p id="x11"></p></h2>
+        <h2 class="snd">O<p id="o11"></p></h2>
+        <h2 id="refresh1" onclick="resetGames()">↺</h2>
+    </div>
+    <div class="container1">
+            <div class="game-cell1" id="cell-1"></div>
+            <div class="game-cell1" id="cell-2"></div>
+            <div class="game-cell1" id="cell-3"></div>
+            <div class="game-cell1" id="cell-4"></div>
+            <div class="game-cell1" id="cell-5"></div>
+            <div class="game-cell1" id="cell-6"></div>
+            <div class="game-cell1" id="cell-7"></div>
+            <div class="game-cell1" id="cell-8"></div>
+            <div class="game-cell1" id="cell-9"></div>
+            <div class="game-cell1" id="cell-10"></div>
+            <div class="game-cell1" id="cell-11"></div>
+            <div class="game-cell1" id="cell-12"></div>     
+            <div class="game-cell1" id="cell-13"></div>
+            <div class="game-cell1" id="cell-14"></div>
+            <div class="game-cell1" id="cell-15"></div>
+            <div class="game-cell1" id="cell-16"></div>          
+    </div>
+    <h1 class="take">Player - <p id="x/o1" class="xo"></p> - wins !</h1>
+    <div class="option">
+        <h5 class="op" id="quit">❌ QUIT</h5>
+        <h5 class="op" id="home">Home</h5>
+    </div>
+</div>
+<audio id="music" src="mixkit-auditorium-moderate-applause-and-cheering-502.wav"></audio>
+<script src="script.js"></script>
+</body>
+</html>
